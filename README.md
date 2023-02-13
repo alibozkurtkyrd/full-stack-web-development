@@ -30,4 +30,6 @@ Clone this repository to your local machine or just download the zip.
  - write your information (your dbname,username,password) on Database.php file inside backend/Config folder
 
 I deployed app on Amzon Web Service Ec2 instance. [Test my app](http://3.87.148.126:3000/)
-for more information check [video](https://drive.google.com/file/d/1meHsVF2DnkExRx7v89wecw5NrLjqYYh3/view?usp=sharing).
+
+
+For more information check [video](https://drive.google.com/file/d/1meHsVF2DnkExRx7v89wecw5NrLjqYYh3/view?usp=sharing).
