@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 // import AddProductInnerForm from "./AddProductInnerForm";
-import { useNavigate } from "react-router-dom";
 
 function AddProductForm(props) {
   const [switcherValue, setswitcherValue] = useState("dvd"); // this state created for switch operation
@@ -14,7 +13,6 @@ function AddProductForm(props) {
   const [formErrors, setFormErrors] = useState({}); // Validation error array
   const [isSubmit, setIsSubmit] = useState(false);
 
-  const navigate = useNavigate();
 
   const handleChange = async (event) => {
     const name = event.target.name;
@@ -43,9 +41,8 @@ function AddProductForm(props) {
     if (Object.keys(formErrors).length === 0 && isSubmit) {
       // if there is no error submit the form
       props.sendInputs(inputs);
-      navigate("/"); // route to main page
     }
-  }, [formErrors, navigate, isSubmit, inputs, props]);
+  }, [formErrors, isSubmit, inputs, props]);
 
   function submitFormInner(event) {
     // its triggered when form is submitted

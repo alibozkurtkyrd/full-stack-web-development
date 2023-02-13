@@ -2,8 +2,12 @@ import React from "react";
 import NavButtons from "./NavButtons";
 import AddProductForm from "./AddProductForm";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 function AddProductPage() {
+
+  const navigate = useNavigate();
+
   function handleSubmit(inputs) {
     // this function gets the input values from child component and post to backend
 
@@ -28,6 +32,7 @@ function AddProductPage() {
       .post("http://3.87.148.126/backend/Api/index.php", JSON.stringify(product)) // post product object to API
       .then(function (response) {
         console.log(response.data);
+        navigate("/"); // route to main page
       });
   }
 
