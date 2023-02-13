@@ -1,7 +1,24 @@
 # full-stack-web-development
-it's created by using react and php
+
+it's a full stack product manangement app created by using React and Php
 
 ---
+
+## Features
+ - List Products
+ - Add Product
+ - Delete Products
+ - React form validation
+ - OOP principle is used in Php
+
+## Used tools
+ 
+ - PHP - communication and operations with Product SQL database
+ - MySQL - database manipulation
+ - Bootstrap - styles framework
+ - React -  creat user interface for website
+ - git - project version controller
+ - VS Code - code editor 
 
 ## Running this web application
 
