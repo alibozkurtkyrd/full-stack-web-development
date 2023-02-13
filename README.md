@@ -10,4 +10,4 @@ Clone this repository to your local machine or just download the zip.
 
  - Import the productDB.sql file.
  
- - write your information (your dbname,username,password) on inside Database.php file inside backend/Config folder
+ - write your information (your dbname,username,password) on Database.php file inside backend/Config folder
