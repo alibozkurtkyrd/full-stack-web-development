@@ -25,7 +25,7 @@ function AddProductPage() {
     }
 
     axios
-      .post("http://127.0.0.1:8000/Api/index", JSON.stringify(product)) // post product object to API
+      .post("http://3.87.148.126/backend/Api/index.php", JSON.stringify(product)) // post product object to API
       .then(function (response) {
         console.log(response.data);
       });

@@ -1,6 +1,6 @@
 import React from "react";
 import Product from "./Product";
-// import ProductList from "./testArray"
+// import ProductList from "./testArray" // a
 import NavButtons from "./NavButtons";
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -32,7 +32,7 @@ function ProductListPage() {
     };
 
     axios
-      .delete(`http://127.0.0.1:8000/Api/index`, {
+      .delete(`http://3.87.148.126/backend/Api/index.php`, {
         data: JSON.stringify(deletedProductSkus),
       })
       .then(function (response) {
@@ -52,7 +52,7 @@ function ProductListPage() {
 
   function getProducts() {
     // this methods fetch produts from API
-    axios.get("http://127.0.0.1:8000/Api/index").then(function (response) {
+    axios.get("http://3.87.148.126/backend/Api/index.php").then(function (response) {
       setProducts(response.data);
     });
   }
