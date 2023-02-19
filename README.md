@@ -1,6 +1,6 @@
 # full-stack-web-development
 
-it's a full stack product manangement app created by using React and Php
+it's a full stack product management  app created by using React and Php
 
 ---
 
